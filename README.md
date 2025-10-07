@@ -7,7 +7,7 @@ FEATURE - Criar um README.md no projeto com marcação. / prof.Alexandre
 ---
 
 ```
-1 - FEATURE - Criar um projeto Vite+React+TS / 
+1 - FEATURE - Criar um projeto Vite+React+TS / prof.Alexandre
 ```
 ---
 ```
