@@ -3,7 +3,10 @@ export default function CriarConta(){
 
     return(
         <main>
+
             <h1>Criar Conta</h1>
+
+            
         </main>
     );
 }
