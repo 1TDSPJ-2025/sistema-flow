@@ -4,6 +4,11 @@
     "react-hook-form": "^7.64.0",
     "react-icons": "^5.5.0",
     "react-use-form": "^0.1.0"
+<<<<<<< HEAD
+  },
+  "devDependencies": {
+    "json-server": "^1.0.0-beta.3"
+=======
 =======
     "react-router-dom": "^7.9.3"
   },
@@ -12,5 +17,6 @@
     "postcss": "^8.5.6",
     "tailwindcss": "^4.1.14"
 >>>>>>> feature/boiler-clean-1
+>>>>>>> 8d094effde591c8a66d3be8e836e63c8e45ce1d8
   }
 }
