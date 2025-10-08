@@ -1,5 +1,8 @@
-export default function Title(){
+type Titulo = {
+    text:string
+}
+export default function Title({text}:Titulo){
     return(
-        <h1>Sistema de flow</h1>
+        <h1>{text}</h1>
     )
 }
