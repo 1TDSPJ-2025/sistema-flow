@@ -1,10 +1,17 @@
-export default function Card() {
+interface CardProps {
+  nome: string;
+  nomeUser: string;
+  email: string;
+  avatar: string;
+}
+
+export default function Card({ nome, nomeUser, email, avatar }: CardProps) {
     return (
         <div>
-           <p>Andre</p>
-           <p>Andre jogador</p>
-           <p>andre@gmail.com</p>
-            <img src="/" alt="noticia aqui" />
+           <p>{nome}</p>
+           <p>{nomeUser}</p>
+           <p>{email}</p>
+           <img src={avatar} alt="noticia aqui" />
         </div>
     );
 }
