@@ -29,5 +29,35 @@
       "email": "rafael.pereira@email.com",
       "avatar": "https://i.pravatar.cc/150?img=4"
     }
+
+    {
+        "id": 5,
+      "nome": "Arnaldo Ferreira",
+      "nomeUser": "analdofer",
+      "email": "arnaldofer@email.com",
+      "avatar": "https://i.pravatar.cc/150?img=3"
+      
+    },
+    {
+      "id": 6,
+      "nome": "Fernando",
+      "nomeUser": "fernandosantos",
+      "email": "fernando.santos@email.com",
+      "avatar": "https://i.pravatar.cc/150?img=2"
+    },
+    {
+      "id": 7,
+      "nome": "Gustavo Abrao",
+      "nomeUser": "gustavo",
+      "email": "gustavoabrao@email.com",
+      "avatar": "https://i.pravatar.cc/150?img=1"
+    },
+    {
+      "id": 8,
+      "nome": "Leticia Goncalves",
+      "nomeUser": "letgoncalves",
+      "email": "leticia.goncalves@email.com",
+      "avatar": "https://i.pravatar.cc/150?img=4"
+    }
   ]
 }
