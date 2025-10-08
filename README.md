@@ -18,7 +18,7 @@ FEATURE - Criar um README.md no projeto com marcação. / prof.Alexandre
 ---
 
 ```
-3 - FEATURE - Criar cabeçalho, rodapé e menu e componentes funcionais / Hector+Gutemberg+João 
+3 - FEATURE - Criar cabeçalho, rodapé e menu e   / Hector+Gutemberg+João 
 ```
 ---
 ```
