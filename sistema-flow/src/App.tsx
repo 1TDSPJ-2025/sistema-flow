@@ -1,15 +1,14 @@
-import { useState } from 'react'
+import { Outlet } from "react-router-dom";
+import Cabecalho from "./components/Cabecalho/Cabecalho";
+import Footer from "./components/Rodape/Rodape";
 
+export default function App(){
 
-function App() {
- 
-
-  return (
+  return(
     <>
-      <h1>Gutemberg Careca (fui eu mesmo que escrevi)</h1>
+      <Cabecalho/>
+      <Outlet/>
+      <Footer/>
     </>
-  )
+  );
 }
-
-export default App
-
