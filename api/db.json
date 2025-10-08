@@ -1,5 +1,5 @@
 {
-  "usuarios": [
+  "usuarios":[
     {
         "id": 1,
       "nome": "Vitória Maglio",
@@ -57,6 +57,5 @@
       "nomeUser": "letgoncalves",
       "email": "leticia.goncalves@email.com",
       "avatar": "../img/avatar8.jpeg"
-    }
-  ]
+    } ]
 }
