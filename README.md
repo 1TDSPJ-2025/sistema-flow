@@ -41,7 +41,7 @@ FEATURE - Criar um README.md no projeto com marcação. / prof.Alexandre
 [DEADLINE:11:40]
 ```
 ```
-8 - FEATURE -  Adicionar no cabeçalho informações sobre a bolsa de valores e clima através de posts, utilizem apis públicas( peguem exemplos de sites como MSN,UOL etc.) / Juliana+Naoki
+8 - FEATURE -  Adicionar no cabeçalho informações sobre a bolsa de valores e clima através de posts, utilizem apis públicas( peguem exemplos de sites como MSN,UOL etc.) / Juliana+Naoki+Amandha+Erick+Giovanna+João H.
 [DEADLINE:11:50]
 ```
 
