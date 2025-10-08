@@ -28,8 +28,7 @@
       "nomeUser": "rafael",
       "email": "rafael.pereira@email.com",
       "avatar": "https://i.pravatar.cc/150?img=4"
-    }
-
+    },
     {
         "id": 5,
       "nome": "Arnaldo Ferreira",
@@ -58,6 +57,20 @@
       "nomeUser": "letgoncalves",
       "email": "leticia.goncalves@email.com",
       "avatar": "https://i.pravatar.cc/150?img=4"
+    },
+    {
+      "id": 9,
+      "nome": "Maria Souza",
+      "nomeUser": "mariasz",
+      "email": "mariasouza@email.com",
+      "avatar": "https://i.pravatar.cc/150?img=1"
+    },
+    {
+      "id": 10,
+      "nome": "Rafaela Trindade",
+      "nomeUser": "rafatrindade",
+      "email": "rafaelatrindade@email.com",
+      "avatar": "https://i.pravatar.cc/150?img=1"
     }
   ]
 }
