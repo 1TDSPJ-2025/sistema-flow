@@ -40,4 +40,7 @@
 
 
 ### FREE TEAM
-[Huguinho, Lusinho, Zezinho]
+[Huguinho,Lusinho,Zezinho]
+[Hector,João]
+[Matheus,Felipe,Rafael,Vitória]
+[Juliana,Naoki,JoãoH]
