@@ -32,6 +32,7 @@
 ---
 ## EM DESENVOLVIMENTO:
 <ul style="color:yellow">
+<li>Feature- Criar um json com foto de produto nome e preco e fazer uma pagina produto mostrantdo esses produros/Matheus+Felipe+Rafael+Vitória
 <li>FEATURE - Criar sistema de Rotas e colocar sistema de login com formulários / Julia+Manuela+Carol/[DEADLINE:09:05]</li>
 <li>FEATURE - Instalar o tailwind e aplicar estilos básicos e responsividade / Raphael+João Gabriel+Luan/[DEADLINE:09:15]</li>
 <li>FEATURE -  Criar um sistema de cupons, desconto, utilize uma API para basorver dados para criar cards atualizados com descontos e promoções diversas na HOME / Mathaus+Filipo+Eduardo+Vinicius</li>
