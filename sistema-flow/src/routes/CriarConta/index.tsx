@@ -22,7 +22,7 @@ export default function CriarConta(){
 
         if (usuarioExistente) {
 
-          alert("Nome de usuário ou email já cadastrado!");
+          alert("Nome de usuário ou email já cadastrado");
           return;
         }
 
@@ -31,14 +31,47 @@ export default function CriarConta(){
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(data)
 
-          
+
         });
 
-        alert("Cadastro realizado com sucesso!");
+        alert("Cadastro realizado com sucesso");
         navigate("/login");
       };
 
         return(
+
+            <main>
+                <h1>Cadastro</h1>
+            
+                <div> 
+                    <div>
+                        <form onSubmit={handleSubmit(onSubmit)}>
+                            <div>
+                                <label>Nome</label>
+                                <input type="text" {...register("nome", { required: "Nome obrigatório" })} />
+                                {errors.nome && <p>{errors.nome.message}</p>}
+                            </div>
+            
+                            <div>
+                                <label>Senha</label>
+                                <input type="text" {...register("senha", { required: "Senha é obrigatório" })} />
+                                {errors.senha && <p>{errors.senha.message}</p>}
+                            </div>
+            
+                            <div>
+                                <label>Email</label>
+                                <input type="email" {...register("email", {required: "Email obrigatório",pattern: { value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/, message: "Email inválido" }})}/>
+                                {errors.email && <p>{errors.email.message}</p>}
+                            </div>
+            
+                            <div >
+                                <button type="submit">Cadastrar</button>
+                            </div>
+            
+                        </form>
+                    </div>
+                </div>
+            </main>
             
         );
     }
