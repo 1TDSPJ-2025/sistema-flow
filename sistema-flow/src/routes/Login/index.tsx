@@ -1,4 +1,4 @@
-import { UserContext } from "../../Provinder";
+import { UserContext } from "../../Provinder/Provinder";
 
 type LoginData = {
         email: string;
