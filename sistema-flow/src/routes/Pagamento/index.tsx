@@ -1,6 +1,9 @@
 import { useState } from "react";
 
-
+const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    alert("Pagamento enviado!");
+}
 export default function Pagamento(){
     document.title = "Pagamento";
     return(
