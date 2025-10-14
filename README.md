@@ -43,4 +43,4 @@
 [Huguinho,Lusinho,Zezinho]
 [Hector,João]
 [Matheus,Felipe,Rafael,Vitória]
-[Juliana,Naoki,JoãoH]
+[Juliana,Naoki]
