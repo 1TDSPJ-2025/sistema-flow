@@ -5,7 +5,7 @@
       "nome": "Vitória Maglio",
       "nomeUser": "vitoriam",
       "email": "vitoria.maglio@email.com",
-      "avatar": "../img/avatar1.jpeg"
+      "avatar": "/avatar1.jpeg"
       
     },
     {
@@ -13,28 +13,28 @@
       "nome": "Mateus",
       "nomeUser": "mateussouza",
       "email": "mateus.souza@email.com",
-      "avatar": "../img/avatar2.jpeg"
+      "avatar": "/avatar2.jpeg"
     },
     {
       "id": 3,
       "nome": "Felipe",
       "nomeUser": "felipem",
       "email": "felipe.maglio@email.com",
-      "avatar": "../img/avatar3.jpeg"
+      "avatar": "/avatar3.jpeg"
     },
     {
       "id": 4,
       "nome": "Rafael",
       "nomeUser": "rafael",
       "email": "rafael.pereira@email.com",
-      "avatar": "../img/avatar4.jpeg"
+      "avatar": "/avatar4.jpeg"
     },
     {
         "id": 5,
       "nome": "Arnaldo Ferreira",
       "nomeUser": "analdofer",
       "email": "arnaldofer@email.com",
-      "avatar": "../img/avatar5.jpeg"
+      "avatar": "/avatar5.jpeg"
       
     },
     {
@@ -42,20 +42,20 @@
       "nome": "Fernando",
       "nomeUser": "fernandosantos",
       "email": "fernando.santos@email.com",
-      "avatar": "../img/avatar6.jpeg"
+      "avatar": "/avatar6.jpeg"
     },
     {
       "id": 7,
       "nome": "Gustavo Abrao",
       "nomeUser": "gustavo",
       "email": "gustavoabrao@email.com",
-      "avatar": "../img/avatar7.jpeg"
+      "avatar": "/avatar7.jpeg"
     },
     {
       "id": 8,
       "nome": "Leticia Goncalves",
       "nomeUser": "letgoncalves",
       "email": "leticia.goncalves@email.com",
-      "avatar": "../img/avatar8.jpeg"
+      "avatar": "/avatar8.jpeg"
     } ]
 }
