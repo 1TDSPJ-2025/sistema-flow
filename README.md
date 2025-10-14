@@ -12,14 +12,13 @@
 
 ## IMPLEMENTADOS:
 <ul style="color:green">
+    <li>FEATURE - Criar um README.md no projeto com marcação. / prof.Alexandre</li>
     <li> ... </li>
 </ul>
 
 ---
-
 ## EM HOMOLOGAÇÃO:
 <ul style="color:orange">
-    <li>FEATURE - Criar um README.md no projeto com marcação. / prof.Alexandre</li>
     <li>FEATURE - Criar um projeto Vite+React+TS / prof.Alexandre</li>
     <li>FEATURE - Limpar o boiler Plate e instalar o router-dom tailwindcss react-use-form react-icons json-server/ Gio+Takeshi / [DEADLINE:11:00]</li>
 <li>FEATURE - Criar cabeçalho, rodapé e menu e componentes funcionais / Hector+João / [DEADLINE:11:00]</li>
