@@ -5,10 +5,10 @@ import Footer from "./components/Rodape/Rodape";
 export default function App(){
 
   return(
-    <>
+    <div className="container">
       <Cabecalho/>
       <Outlet/>
       <Footer/>
-    </>
+    </div>
   );
 }
