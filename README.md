@@ -38,6 +38,8 @@
 <li>FEATURE -  Criar um sistema de cupons, desconto,  criar cards atualizados com descontos e promoções diversas na HOME / Mathaus+Filipo+Eduardo+Vinicius+Carlos</li>
 [DEADLINE:11:40]</li>
 <li>Feature - Fazer o style do menu, cabecalho e rodape - Nana e Erick Takeshi</li>
+<li>Feature - Estilzar o componente Card - Luan</li>
+<li>Feature - Estilzar o rota Erro - Rafael</li>
 </ul>
 
 
