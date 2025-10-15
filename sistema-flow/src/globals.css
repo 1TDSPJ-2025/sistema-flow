@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@layer{
+    .container{
+        @apply flex flex-col justify-between w-[100vw] h-[100vh] bg-[#1a1a1a] text-black ;
+
+        & header{
+            @apply flex flex-col justify-center items-center gap-x-150 h-[25vh] w-[100vw] bg-[#7f6992];
+
+        & h1{
+            @apply text-center;
+      }
+        & nav{
+        @apply flex gap-x-7 items-center;
+
+        & a{
+          @apply p-5 bg-[#62208d83] rounded-xl w-30 h-15 flex flex-col justify-center items-center border transition duration-200 ease-in-out;
+        
+          &:hover{
+            @apply bg-[#a89baf];
+          }  
+        }
+    }     
+}
+        & main{
+            @apply h-[70vh] w-[100vw] bg-[#ffffff];
+        }
+    
+    }
+    }
