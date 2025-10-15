@@ -1,4 +1,5 @@
-[
+{
+  "produtos": [
   {
     "id": 1,
     "nome": "Paracetamol 500mg - 20 Comprimidos",
@@ -64,5 +65,7 @@
     "imagem": "../api/public/bandaid.jpeg",
     "descricao": "Curativos adesivos para proteção rápida de pequenos ferimentos."
   }
-]
+  ]
+}
+
 
