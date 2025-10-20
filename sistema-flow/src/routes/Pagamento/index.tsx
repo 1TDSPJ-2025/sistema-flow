@@ -22,42 +22,13 @@ export default function Pagamento() {
   };
  
   return (
-    <div>
-      <form onSubmit={handleSubmit(onSubmit)}>
-        <h1>Pagamento</h1>
- 
+    <div className="pagamento-container">
+      <form onSubmit={handleSubmit(onSubmit)} className="formularios">
+        <h1>💳 Pagamento Seguro</h1>
+       
         <input
           type="text"
           placeholder="Nome no cartão"
+          className="inputlogcad"
           {...register("nome")}
         />
- 
-        <input
-          type="text"
-          placeholder="Número do cartão"
-          {...register("numeroCartao")}
-        />
- 
-        <input
-          type="text"
-          placeholder="Data de validade"
-          {...register("validade")}
-        />
- 
-        <input
-          type="text"
-          placeholder="CVV"
-          {...register("cvv")}
-        />
- 
-        <input
-          type="text"
-          placeholder="CPF do titular"
-          {...register("cpf")}
-        />
- 
-        <button type="submit">Pagar</button>
-      </form>
-    </div>
-  );
-}
