@@ -32,3 +32,42 @@ export default function Pagamento() {
           className="inputlogcad"
           {...register("nome")}
         />
+        <input
+          type="text"
+          placeholder="Número do cartão"
+          className="inputlogcad"
+          {...register("numeroCartao")}
+        />
+ 
+        <div className="flex gap-4">
+          <input
+            type="text"
+            placeholder="Data de validade"
+            className="inputlogcad flex-1"
+            {...register("validade")}
+          />
+ 
+          <input
+            type="text"
+            placeholder="CVV"
+            className="inputlogcad"
+            style={{ width: '100px' }}
+            {...register("cvv")}
+          />
+        </div>
+ 
+        <input
+          type="text"
+          placeholder="CPF do titular"
+          className="inputlogcad"
+          {...register("cpf")}
+        />
+ 
+        <button type="submit" className="botaoenviar">
+          Confirmar Pagamento
+        </button>
+      </form>
+    </div>
+  );
+}
+ 
