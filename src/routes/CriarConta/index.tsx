@@ -1,9 +1,10 @@
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
+import type { Usuario } from "../../type/tipoUsuario";
 
 type CriarData = {
     nome: string;
-    nomeUsuario: string;
+    senha: string;
     email: string;
     };
 
@@ -11,13 +12,16 @@ type CriarData = {
 export default function CriarConta(){
 
     
-    const { register, handleSubmit, formState: { errors } } = useForm<CadastroData>();
+    const { register, handleSubmit, formState: { errors } } = useForm<CriarData>();
     const navigate = useNavigate();
+
+
     const onSubmit = async (data: CriarData) => {
-      const res = await fetch(`http://localhost:3000/usuarios?nomeUsuario=${data.nomeUsuario}&email=${data.email}`);
+      const res = await fetch(`http://localhost:3000/usuarios?email=${data.email}`);
       const users: Usuario[] = await res.json();
+
       const usuarioExistente = users.find(
-        (u) => u.nomeUsuario === data.nomeUsuario || u.email === data.email
+        (u) => u.email === data.email
       );
       if (usuarioExistente) {
         alert("Nome de usuário ou email já cadastrado");
@@ -46,13 +50,14 @@ export default function CriarConta(){
         
                         <div>
                             <label>Senha</label>
-                            <input type="text" {...register("senha", { required: "Senha é obrigatório" })} />
+                            <input type="password" {...register("senha", { required: "Senha é obrigatório" })} />
                             {errors.senha && <p>{errors.senha.message}</p>}
                         </div>
         
                         <div>
                             <label>Email</label>
-                            <input type="email" {...register("email", {required: "Email obrigatório",pattern: { value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/, message: "Email inválido" }})}/>
+                            <input type="email" {...register("email", {required: "Email obrigatório",
+                                pattern: { value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/, message: "Email inválido" }})}/>
                             {errors.email && <p>{errors.email.message}</p>}
                         </div>
         
