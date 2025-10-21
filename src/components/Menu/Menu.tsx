@@ -5,6 +5,7 @@ export default function Menu() {
         <nav>
             <Link to="/">Home</Link>
             <Link to="/pagamento">Pagamento</Link>
+            <Link to="login">Login</Link>
         </nav>
     );
 }
