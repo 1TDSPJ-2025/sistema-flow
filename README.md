@@ -20,6 +20,7 @@
     [DEADLINE:11:15]</li>
     [DEADLINE:11:50]</li>
     <li>FEATURE - Instalar o tailwind e aplicar estilos básicos e responsividade / Raphael+João Gabriel+Luan/[DEADLINE:09:15]</li>
+    <li>Feature - Refatorar pagina error e estilizar com tailwind - João Henrique / Pedro</li>
     <li> ... </li>
 </ul>
 
@@ -40,7 +41,6 @@
 <li>Feature - Estilzar o componente Card - Luan</li>
 <li>Feature - Estilzar o rota Erro - Rafael</li>
 <li>Feature - Instalar o json server, fazer o fetch e consummir a url do json nas paginas Home - Hector</li>
-<li>Feature - Refatorar pagina error e estilizar com tailwind - João Henrique / Pedro</li>
 </ul>
 
 
