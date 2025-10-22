@@ -1,8 +1,12 @@
+import { useForm } from "react-hook-form";
+
+import { useNavigate } from "react-router-dom";
+import { useContext } from "react";
 import { UserContext } from "../../Provinder/Provinder";
 
 type LoginData = {
         email: string;
-        senha: number;
+        senha: string;
     }
 
 export default function Login(){
@@ -11,6 +15,11 @@ export default function Login(){
     const { setUser } = useContext(UserContext);
 
     const onSubmit = async (data: LoginData) => {
+
+        const res = await fetch(
+            `http://localhost:3000/usuarios?email=${data.email}`
+        );
+    const users = await res.json();
 
         if (users.length > 0) {
         localStorage.setItem("usuarioLogado", JSON.stringify(users[0]));
@@ -46,8 +55,8 @@ export default function Login(){
                         <div>
                             <label>Senha</label>
                             <input
-                                type="text"
-                                {...register("Senha", {
+                                type="password"
+                                {...register("senha", {
                                     required: "A senha é obrigatória",
                                     minLength: {
                                         value: 8,
