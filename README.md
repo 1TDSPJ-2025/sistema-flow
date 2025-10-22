@@ -41,6 +41,7 @@
 <li>Feature - Estilzar o rota Erro - Rafael</li>
 <li>Feature - Instalar o json server, fazer o fetch e consummir a url do json nas paginas Home - Hector</li>
 <li>Feature - Refatorar pagina error e estilizar com tailwind - João Henrique / Pedro</li>
+<li>Feature - Refatorar pagina login - João Henrique / Pedro</li>
 </ul>
 
 
