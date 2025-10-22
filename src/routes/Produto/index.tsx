@@ -1,6 +1,6 @@
 import CardProdutos from "../../components/CardProduto/CardProduto";
 import Title from "../../components/H1Title/Title";
-import infos from "../../api/db.json";
+import infos from "../../../db.json";
  
 export default function Produto() {
   document.title = "Produtos";
