@@ -57,5 +57,38 @@
       "nomeUser": "letgoncalves",
       "email": "leticia.goncalves@email.com",
       "avatar": "/avatar8.jpeg"
-    } ]
+    } ],
+    "desconto": [
+    {
+      "id": 1,
+      "porcentagem": 20,
+      "dt_inicio": "22/10/2025",
+      "dt_fim": "25/10/2025"
+    },
+    {
+      "id": 2,
+      "porcentagem": 40,
+      "dt_inicio": "22/10/2025",
+      "dt_fim": "26/10/2025"
+    },
+    {
+      "id": 3,
+      "porcentagem": 10,
+      "dt_inicio": "01/11/2025",
+      "dt_fim": "05/11/2025"
+    },
+    {
+      "id": 4,
+      "porcentagem": 25,
+      "dt_inicio": "10/11/2025",
+      "dt_fim": "15/11/2025"
+    },
+    {
+      "id": 5,
+      "porcentagem": 30,
+      "dt_inicio": "20/11/2025",
+      "dt_fim": "25/11/2025"
+    }
+
+    ]
 }
