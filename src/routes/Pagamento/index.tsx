@@ -22,6 +22,7 @@ export default function Pagamento() {
   };
  
   return (
+    <main className="h-[100vh] w-[100vw]">
     <div className="pagamento-container">
       <form onSubmit={handleSubmit(onSubmit)} className="formularios">
         <h1>💳 Pagamento Seguro</h1>
@@ -68,6 +69,7 @@ export default function Pagamento() {
         </button>
       </form>
     </div>
+    </main>
   );
 }
  
