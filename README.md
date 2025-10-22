@@ -40,6 +40,7 @@
 <li>Feature - Estilzar o componente Card - Luan</li>
 <li>Feature - Estilzar o rota Erro - Rafael</li>
 <li>Feature - Instalar o json server, fazer o fetch e consummir a url do json nas paginas Home - Hector</li>
+<li>Feature - Refarorar pagina error e estilizar- João Henrique / Pedro</li>
 </ul>
 
 
