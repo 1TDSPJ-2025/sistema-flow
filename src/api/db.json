@@ -5,7 +5,7 @@
       "nome": "Vitória Maglio",
       "nomeUser": "vitoriam",
       "email": "vitoria.maglio@email.com",
-      "avatar": "/avatar1.jpeg"
+      "avatar": "/sistema-flow/public"
       
     },
     {
@@ -64,7 +64,7 @@
     "nome": "Paracetamol 500mg - 20 Comprimidos",
     "categoria": "Medicamento",
     "preco": 12.90,
-    "imagem": "../public/paracetamol.png",
+    "imagem": "/sistema-flow/public/paracetamol.png",
     "descricao": "Analgésico e antipirético para alívio de febre e dores leves."
   },
   {
@@ -72,7 +72,7 @@
     "nome": "Dipirona Sódica 500mg - 10ml",
     "categoria": "Medicamento",
     "preco": 8.50,
-    "imagem": "../public/dipirona.jpeg",
+    "imagem": "/sistema-flow/public/dipirona.jpeg",
     "descricao": "Reduz a febre e alivia dores de cabeça e musculares."
   },
   {
@@ -80,7 +80,7 @@
     "nome": "Álcool em Gel 70% - 500ml",
     "categoria": "Higiene",
     "preco": 14.99,
-    "imagem": "../public/alcool.jpeg",
+    "imagem": "/sistema-flow/public/alcool.jpeg",
     "descricao": "Higienizador de mãos com ação antibacteriana e rápida absorção."
   },
   {
@@ -88,7 +88,7 @@
     "nome": "Máscara Cirúrgica Descartável - 50 Unidades",
     "categoria": "Proteção",
     "preco": 24.90,
-    "imagem": "../public/mascara.jpeg",
+    "imagem": "/sistema-flow/public/mascara.jpeg",
     "descricao": "Máscaras triplas com filtro bacteriano e elástico confortável."
   },
   {
@@ -96,7 +96,7 @@
     "nome": "Vitamina C 500mg - 30 Comprimidos Efervescentes",
     "categoria": "Suplemento",
     "preco": 19.90,
-    "imagem": "../public/vitC.jpeg",
+    "imagem": "/sistema-flow/public/vitC.jpeg",
     "descricao": "Auxilia no fortalecimento do sistema imunológico."
   },
   {
@@ -104,7 +104,7 @@
     "nome": "Shampoo Anticaspa Clear Men - 200ml",
     "categoria": "Higiene Pessoal",
     "preco": 17.50,
-    "imagem": "../public/shampoo.jpeg",
+    "imagem": "/sistema-flow/public/shampoo.jpeg",
     "descricao": "Combate a caspa e refresca o couro cabeludo."
   },
   {
@@ -112,7 +112,7 @@
     "nome": "Protetor Solar FPS 50 - 120ml",
     "categoria": "Cuidados Pessoais",
     "preco": 39.90,
-    "imagem": "../public/solar.jpeg",
+    "imagem": "/sistema-flow/public/solar.jpeg",
     "descricao": "Protege contra os raios UVA e UVB, com toque seco e resistente à água."
   },
  
@@ -121,7 +121,7 @@
     "nome": "Band-Aid - Caixa com 40 Unidades",
     "categoria": "Primeiros Socorros",
     "preco": 13.50,
-    "imagem": "../public/bandaid.jpeg",
+    "imagem": "/sistema-flow/public/bandaid.jpeg",
     "descricao": "Curativos adesivos para proteção rápida de pequenos ferimentos."
   }
   ]
