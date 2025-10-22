@@ -2,7 +2,7 @@ import { createContext, useEffect, useState, type ReactNode } from "react";
 
 export const UserContext = createContext<any>(null);
 
-export function Providencias({ children }: { children: ReactNode }) {
+export function Provinder({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<any>(null);
 
 
