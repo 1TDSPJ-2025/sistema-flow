@@ -13,7 +13,7 @@
     "nome": "Dipirona Sódica 500mg - 10ml",
     "categoria": "Medicamento",
     "preco": 8.50,
-    "imagem": "../api/public/dipirona.jpeg",
+    "imagem": "../public/dipirona.jpeg",
     "descricao": "Reduz a febre e alivia dores de cabeça e musculares."
   },
   {
