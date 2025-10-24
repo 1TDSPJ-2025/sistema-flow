@@ -31,14 +31,17 @@ export default function Login(){
     };
 
     return (
-        <main>
-            <h1>Login</h1>
+        <main className="min-h-screen flex items-center justify-center bg-blue-300 p-5">
+            <div className="bg-white rounded-2xl shadow-2xl p-8 w-full max-w-">
+                <div className="text-center mb-8">
+                    <h1 className="text-3xl font-bold text-gray-800 mb-2">Login</h1>
+                    <p className="text-gray-600 text-sm">Acesse sua conta na 1TDSPJ Farma</p>
+                </div>
             <div>
-                <div>
-                    <form onSubmit={handleSubmit(onSubmit)}>
+            <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
                           
-                        <div>
-                            <label>Email</label>
+                        <div className="space-y-2">
+                            <label className="block text-sm font-semibold text-gray-700">Email</label>
                             <input
                                 type="email"
                                 {...register("email", {
@@ -46,14 +49,15 @@ export default function Login(){
                                     pattern: {
                                         value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
                                         message: "Formato de email inválido",
-                                    },
+                                    },   
                                 })}
+                                className="w-full px-4 py-3 rounded-lg border-2 bg-gray-50 transition-all outline-none focus:bg-white border-gray-200 focus:border-blue-400 focus:ring-4 focus:ring-blue-100"
                             />
-                          {errors.email && <p>{errors.email.message}</p>}
+                          {errors.email && <p className="text-red-500 text-sm flex items-center gap-1">{errors.email.message}</p>}
                         </div>
 
-                        <div>
-                            <label>Senha</label>
+                        <div className="space-y-2">
+                            <label className="block text-sm font-semibold text-gray-700">Senha</label>
                             <input
                                 type="password"
                                 {...register("senha", {
@@ -63,12 +67,13 @@ export default function Login(){
                                         message: "A senha deve ter pelo menos 8 caracteres",
                                     },
                                 })}
+                                className="w-full px-4 py-3 rounded-lg border-2 bg-gray-50 transition-all outline-none focus:bg-white border-gray-200 focus:border-blue-400 focus:ring-4 focus:ring-blue-100"
                             />
-                          {errors.senha && <p>{errors.senha.message}</p>}
+                          {errors.senha && <p className="text-red-500 text-sm flex items-center gap-1">{errors.senha.message}</p>}
                         </div>
                           
                         <div>
-                          <button type="submit">Entrar</button>
+                          <button type="submit" className="w-full bg-cyan-500 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:shadow-xl hover:bg-cyan-600 ">Entrar</button>
                         </div>
                     </form>
                 </div>
