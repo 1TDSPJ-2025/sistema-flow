@@ -44,7 +44,8 @@
 <li>Feature - Refatorar pagina error e estilizar com tailwind - João Henrique / Pedro</li>
 <li>Feature - Refatorar pagina login - João Henrique / Pedro</li>
 <li>Feature - Estilizar cabeçalho -  Pedro</li>
-<li>Feature - Fazer um componente buscar que vai procurar o produto pelo nome, para ser usado na pagina produtos -  Vinicius /Mathaus</li>
+<li>Feature - Fazer um componente buscar que vai procurar o produto pelo nome, para ser usado na pagina produtos -  Vinicius / Mathaus</li>
+<li>Feature - Fazer a responsividade (para todas tamnho de telas) do cabecalho e do menu, esse menu tem que esconder do lado diretito da tela quando for no tamanho mobile. Tambem fazer a responsividade (para todas tamnho de telas) da pagina pagamento. -  Filippo / Eduardo e Carlos</li>
 </ul>
 
 
