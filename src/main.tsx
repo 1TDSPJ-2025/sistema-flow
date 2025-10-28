@@ -21,7 +21,7 @@ const router = createBrowserRouter([{
     {path:"/login", element: <Login/>},
     {path:"/criarConta", element: <CriarConta/>}
   ]
-}])
+}], {basename: '/sistema-flow'} )
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
