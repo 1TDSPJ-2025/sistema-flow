@@ -21,6 +21,7 @@
     [DEADLINE:11:50]</li>
     <li>FEATURE - Instalar o tailwind e aplicar estilos básicos e responsividade / Raphael+João Gabriel+Luan/[DEADLINE:09:15]</li>
     <li>Feature - Refatorar pagina error e estilizar com tailwind - João Henrique / Pedro</li>
+    <li>Fetaures  -Criara pagina para pagamento com inputs de numero cartao ome dados etc - Hector,João,Juliana,Naoki [DEADELINE:9:50]</li>
     <li> ... </li>
 </ul>
 
@@ -33,7 +34,6 @@
 ## EM DESENVOLVIMENTO:
 <ul style="color:yellow">
 <li>Feature- Criar um json com foto de produto nome e preco e fazer uma pagina produto mostrantdo esses produros/Matheus+Felipe+Rafael+Vitória</li>
-<li>Fetaures  -Criara pagina para pagamento com inputs de numero cartao ome dados etc - Hector,João,Juliana,Naoki [DEADELINE:9:50]</li>
 <li>FEATURE - Criar sistema de Rotas e colocar sistema de login com formulários e rota para pagina/ Julia+Manuela+Carol/[DEADLINE:09:05]</li>
 <li>FEATURE -  Criar um sistema de cupons, desconto,  criar cards atualizados com descontos e promoções diversas na HOME / Mathaus+Filipo+Eduardo+Vinicius+Carlos</li>
 [DEADLINE:11:40]</li>
