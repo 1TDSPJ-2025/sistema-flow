@@ -1,9 +1,10 @@
-import db from '../../../db.json';
+import db from "../../../db.json";
 
-// Tipos
+
 interface Cupom {
   codigo: string;
-  valor: number | string;
+  valor: number | string; 
+  tipo?: "percentual" | "fixo"; 
 }
 
 interface VerifyResult {
@@ -16,19 +17,25 @@ interface VerifyResult {
 
 const database = db as { cupons?: Cupom[] };
 
+function normalizeCode(codigo: string): string {
+  return codigo.trim().toLowerCase();
+}
+
 export function verifycupom(codigo?: string | null, total = 0): VerifyResult {
-  if (!codigo || typeof codigo !== 'string') {
+  if (!codigo || typeof codigo !== "string" || isNaN(total)) {
     return {
       valid: false,
       cupom: null,
       discountAmount: 0,
       newTotal: total,
-      message: 'Código de cupom inválido.'
+      message: "Código de cupom inválido ou valor total incorreto.",
     };
   }
 
-  const code = codigo.trim().toLowerCase();
-  const cupom = (database.cupons || []).find(c => String(c.codigo).toLowerCase() === code) || null;
+  const code = normalizeCode(codigo);
+  const cupom = (database.cupons || []).find(
+    (c) => normalizeCode(c.codigo) === code
+  ) || null;
 
   if (!cupom) {
     return {
@@ -36,28 +43,47 @@ export function verifycupom(codigo?: string | null, total = 0): VerifyResult {
       cupom: null,
       discountAmount: 0,
       newTotal: total,
-      message: 'Cupom não encontrado.'
+      message: "Cupom não encontrado.",
     };
   }
 
-  const percent = Number(cupom.valor) || 0;
-  const discountAmount = Math.max(0, (total * percent) / 100);
+  const valor = parseFloat(String(cupom.valor)) || 0;
+  let discountAmount = 0;
+
+  
+  if (cupom.tipo === "fixo" || (!cupom.tipo && valor > 1)) {
+   
+    discountAmount = Math.min(valor, total);
+  } else {
+    
+    discountAmount = (total * valor) / 100;
+  }
+
   const newTotal = Math.max(0, total - discountAmount);
+
+  const tipoLabel = cupom.tipo === "fixo" ? "desconto fixo" : "de desconto";
+  const valorLabel =
+    cupom.tipo === "fixo" ? `R$${valor.toFixed(2)}` : `${valor}%`;
 
   return {
     valid: true,
     cupom,
     discountAmount: Number(discountAmount.toFixed(2)),
     newTotal: Number(newTotal.toFixed(2)),
-    message: `Cupom aplicado: ${cupom.codigo} - ${percent}% de desconto.`
+    message: `Cupom aplicado: ${cupom.codigo} - ${valorLabel} ${tipoLabel}.`,
   };
 }
 
 export function isFreeShipping(codigo?: string | null): boolean {
-  if (!codigo || typeof codigo !== 'string') return false;
-  const code = codigo.trim().toLowerCase();
-  const cupom = (database.cupons || []).find(c => String(c.codigo).toLowerCase() === code);
+  if (!codigo || typeof codigo !== "string") return false;
+
+  const code = normalizeCode(codigo);
+  const cupom = (database.cupons || []).find(
+    (c) => normalizeCode(c.codigo) === code
+  );
+
   if (!cupom) return false;
-  const valor = Number(cupom.valor) || 0;
-  return valor === 0 || code.includes('frete');
+
+  const valor = parseFloat(String(cupom.valor)) || 0;
+  return valor === 0 || code.includes("frete") || code.includes("gratis");
 }
