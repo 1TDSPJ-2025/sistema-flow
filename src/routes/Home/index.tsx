@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import Card from "../../components/Card/Card";
 import Title from "../../components/H1Title/Title";
 
+const API_USU= import.meta.env.VITE_API_URL_ENDPOINT_USUARIOS
+
 
 interface CardProps {
     nome: string;
@@ -18,26 +20,32 @@ export default function Home() {
  
 
     useEffect(() => {
-        fetch('http://localhost:5000/usuarios') 
-            .then(response => response.json()) 
-            .then(data => {
-                setUsuarios(data); 
-                  
-            });
+        
+        const fetchData =async()=>{
+            const response = await fetch(API_USU);
+
+            const data = await response.json();
+
+            setUsuarios(data);
+        }
+        fetchData();
+
     }, []); 
 
     return (
-        <main>
+        <main className="w-full">
             <Title text="Site de Registro pessoas" />
 
             <section>
-                {usuarios.map(info => (
+                {usuarios.map((info, indice) => (
+                    < div key={indice} >
                     <Card  
                         nome={info.nome} 
                         nomeUser={info.nomeUser} 
                         email={info.email} 
                         avatar={info.avatar} 
                     />
+                    </div>
                 ))}
             </section>
         </main>

@@ -9,7 +9,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "api": "json-server --watch ./src/api/db.json --port 3000",
+    "api": "json-server --watch db.json --port 3000",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },

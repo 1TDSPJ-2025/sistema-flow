@@ -5,56 +5,56 @@
       "nome": "Vitória Maglio",
       "nomeUser": "vitoriam",
       "email": "vitoria.maglio@email.com",
-      "avatar": "/avatar1.jpeg"
+      "avatar": "/sistema-flow/avatar1.jpeg"
     },
     {
       "id": 2,
       "nome": "Mateus",
       "nomeUser": "mateussouza",
       "email": "mateus.souza@email.com",
-      "avatar": "/avatar2.jpeg"
+      "avatar": "/sistema-flow/avatar2.jpeg"
     },
     {
       "id": 3,
       "nome": "Felipe",
       "nomeUser": "felipem",
       "email": "felipe.maglio@email.com",
-      "avatar": "/avatar3.jpeg"
+      "avatar": "/sistema-flow/avatar3.jpeg"
     },
     {
       "id": 4,
       "nome": "Rafael",
       "nomeUser": "rafael",
       "email": "rafael.pereira@email.com",
-      "avatar": "/avatar4.jpeg"
+      "avatar": "/sistema-flow/avatar4.jpeg"
     },
     {
       "id": 5,
       "nome": "Arnaldo Ferreira",
       "nomeUser": "analdofer",
       "email": "arnaldofer@email.com",
-      "avatar": "/avatar5.jpeg"
+      "avatar": "/sistema-flow/avatar5.jpeg"
     },
     {
       "id": 6,
       "nome": "Fernando",
       "nomeUser": "fernandosantos",
       "email": "fernando.santos@email.com",
-      "avatar": "/avatar6.jpeg"
+      "avatar": "/sistema-flow/avatar6.jpeg"
     },
     {
       "id": 7,
       "nome": "Gustavo Abrao",
       "nomeUser": "gustavo",
       "email": "gustavoabrao@email.com",
-      "avatar": "/avatar7.jpeg"
+      "avatar": "/sistema-flow/avatar7.jpeg"
     },
     {
       "id": 8,
       "nome": "Leticia Goncalves",
       "nomeUser": "letgoncalves",
       "email": "leticia.goncalves@email.com",
-      "avatar": "/avatar8.jpeg"
+      "avatar": "/sistema-flow/avatar8.jpeg"
     } ],
     "desconto": [
     {
@@ -67,7 +67,7 @@
 
       "email": "vitoria.maglio@email.com",
 
-      "avatar": "/sistema-flow/public/avatar1.jpeg"
+      "avatar": "/avatar1.jpeg"
 
     },
 
@@ -81,7 +81,7 @@
 
       "email": "mateus.souza@email.com",
 
-      "avatar": "/sistema-flow/public/avatar2.jpeg"
+      "avatar": "/sistema-flow/avatar2.jpeg"
 
     },
 
@@ -165,7 +165,7 @@
 
       "email": "leticia.goncalves@email.com",
 
-      "avatar": "/sistema-flow/public/avatar8.jpeg"
+      "avatar": "/avatar8.jpeg"
 
     }
 
