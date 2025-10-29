@@ -22,6 +22,8 @@
     <li>FEATURE - Instalar o tailwind e aplicar estilos básicos e responsividade / Raphael+João Gabriel+Luan/[DEADLINE:09:15]</li>
     <li>Feature - Refatorar pagina error e estilizar com tailwind - João Henrique / Pedro</li>
     <li>Fetaures  -Criara pagina para pagamento com inputs de numero cartao ome dados etc - Hector,João,Juliana,Naoki [DEADELINE:9:50]</li>
+    <li>Feature - Fazer o style do menu, cabecalho - Hector </li>
+    <li>Feature - Fazer o style do rodapé - Jõao </li>
     <li> ... </li>
 </ul>
 
@@ -37,7 +39,6 @@
 <li>FEATURE - Criar sistema de Rotas e colocar sistema de login com formulários e rota para pagina/ Julia+Manuela+Carol/[DEADLINE:09:05]</li>
 <li>FEATURE -  Criar um sistema de cupons, desconto,  criar cards atualizados com descontos e promoções diversas na HOME / Mathaus+Filipo+Eduardo+Vinicius+Carlos</li>
 [DEADLINE:11:40]</li>
-<li>Feature - Fazer o style do menu, cabecalho e rodape - Nana e Erick Takeshi</li>
 <li>Feature - Estilzar o componente Card - Luan</li>
 <li>Feature - Estilzar o rota Erro - Rafael</li>
 <li>Feature - Instalar o json server, fazer o fetch e consummir a url do json nas paginas Home - Hector</li>
