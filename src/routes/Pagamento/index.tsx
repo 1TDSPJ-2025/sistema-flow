@@ -49,13 +49,13 @@ export default function Pagamento() {
             <input
               type="text"
               placeholder="Data de validade"
-              className="inputlogcad flex-1"
+              className="inputlogcad w-full"
               {...register("validade")}
             />
             <input
               type="text"
               placeholder="CVV"
-              className="inputlogcad sm:w-28 w-full"
+              className="inputlogcad w-full"
               {...register("cvv")}
             />
           </div>
