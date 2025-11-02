@@ -1,5 +1,4 @@
-import db from "../../../db.json";
-
+import db from "../../db.json";
 
 interface Cupom {
   codigo: string;
