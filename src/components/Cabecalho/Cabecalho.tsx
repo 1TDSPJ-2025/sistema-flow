@@ -30,6 +30,10 @@ export default function Cabecalho() {
           <Link to="/criar-conta" className="hover:text-blue-600 transition-colors">
             Criar Conta
           </Link>
+
+          <Link to="/faq" className="hover:text-blue-600 transition-colors">
+            FAQ
+          </Link>
         </nav>
 
         <button
@@ -112,6 +116,22 @@ export default function Cabecalho() {
             className="hover:text-blue-300 transition-colors"
           >
             Login
+          </Link>
+
+          <Link
+            to="/criar-conta"
+            onClick={() => setMenuAberto(false)}
+            className="hover:text-blue-300 transition-colors"
+          >
+            Criar Conta
+          </Link>
+
+          <Link
+            to="/faq"
+            onClick={() => setMenuAberto(false)}
+            className="hover:text-blue-300 transition-colors"
+          >
+            FAQ
           </Link>
         </nav>
       </div>
