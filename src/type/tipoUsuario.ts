@@ -3,4 +3,6 @@ export type Usuario = {
     nomeUsuario: string;
     email: string;
     senha: string;
+    confirmarEmail: string;
+    confirmarSenha: string;
 }
