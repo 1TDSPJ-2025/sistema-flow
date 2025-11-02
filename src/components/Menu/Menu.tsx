@@ -27,9 +27,16 @@ export default function Menu() {
         </li>
         <li>
           <Link
-            to="/criarconta"
+            to="/criar-conta"
             className="hover:text-teal-300 transition-colors duration-300 font-medium">
             Criar Conta
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="/faq"
+            className="hover:text-teal-300 transition-colors duration-300 font-medium">
+            FAQ
           </Link>
         </li>
       </ul>
