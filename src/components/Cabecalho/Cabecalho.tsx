@@ -27,6 +27,9 @@ export default function Cabecalho() {
           <Link to="/login" className="hover:text-blue-600 transition-colors">
             Login
           </Link>
+          <Link to="/criar-conta" className="hover:text-blue-600 transition-colors">
+            Criar Conta
+          </Link>
         </nav>
 
         <button

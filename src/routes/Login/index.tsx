@@ -24,14 +24,13 @@ export default function Login(){
     const onSubmit = async (data: LoginData) => {
 
         const res = await fetch(
-            `http://localhost:3000/usuarios?email=${data.email}`
-        );
+            `http://localhost:3000/usuarios?email=${data.email}`);
     const users = await res.json();
 
         if (users.length > 0) {
         localStorage.setItem("usuarioLogado", JSON.stringify(users[0]));
         setUser(users[0]);
-        navigate("/Saida"); 
+        navigate("/sucesso"); 
         } else {
             alert("Usuário ou email inválido!");
         }
@@ -90,6 +89,4 @@ export default function Login(){
             </div>
         </main>
     );
-
-
 }
