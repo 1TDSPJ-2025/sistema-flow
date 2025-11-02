@@ -7,25 +7,29 @@ export default function Menu() {
         <li>
           <Link
             to="/"
-            className="hover:text-teal-300 transition-colors duration-300 font-medium"
-          >
+            className="hover:text-teal-300 transition-colors duration-300 font-medium">
             Home
           </Link>
         </li>
         <li>
           <Link
             to="/pagamento"
-            className="hover:text-teal-300 transition-colors duration-300 font-medium"
-          >
+            className="hover:text-teal-300 transition-colors duration-300 font-medium">
             Pagamento
           </Link>
         </li>
         <li>
           <Link
             to="/login"
-            className="hover:text-teal-300 transition-colors duration-300 font-medium"
-          >
+            className="hover:text-teal-300 transition-colors duration-300 font-medium">
             Login
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="/criarconta"
+            className="hover:text-teal-300 transition-colors duration-300 font-medium">
+            Criar Conta
           </Link>
         </li>
       </ul>

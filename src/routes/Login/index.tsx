@@ -21,20 +21,28 @@ export default function Login(){
         document.title = "Login";
     }, []);
 
-    const onSubmit = async (data: LoginData) => {
+    const onSubmit = async (data: LoginData): Promise<void> => {
+        const res = await fetch(`http://localhost:3000/usuarios?email=${data.email}`);
+        const users = await res.json();
 
-        const res = await fetch(
-            `http://localhost:3000/usuarios?email=${data.email}`
-        );
-    const users = await res.json();
+        if (users.length === 0) {
+        alert("Email não encontrado.");
+        return;
+      }
 
-        if (users.length > 0) {
-        localStorage.setItem("usuarioLogado", JSON.stringify(users[0]));
-        setUser(users[0]);
-        navigate("/Saida"); 
-        } else {
-            alert("Usuário ou email inválido!");
-        }
+      const usuario = users[0];
+
+      if (usuario.senha !== data.senha) {
+        alert("Senha incorreta.");
+        return;
+      }
+
+      if (usuario.senha !== data.senha) {
+        alert("Senha incorreta.");
+        return;}
+        localStorage.setItem("usuarioLogado", JSON.stringify(usuario));
+        setUser(usuario);
+        navigate("/sucesso");
     };
 
     return (
@@ -90,6 +98,4 @@ export default function Login(){
             </div>
         </main>
     );
-
-
 }
