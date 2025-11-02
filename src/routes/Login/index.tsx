@@ -1,4 +1,6 @@
 import { useForm } from "react-hook-form";
+import { useEffect, useState } from "react";
+import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 
 import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
@@ -13,6 +15,11 @@ export default function Login(){
     const { register, handleSubmit, formState: { errors } } = useForm<LoginData>();
     const navigate = useNavigate();
     const { setUser } = useContext(UserContext);
+    const [showPassword, setShowPassword] = useState(false);
+
+    useEffect(() => {
+        document.title = "Login";
+    }, []);
 
     const onSubmit = async (data: LoginData) => {
 
@@ -31,19 +38,17 @@ export default function Login(){
     };
 
     return (
-        <main className="min-h-screen flex items-center justify-center bg-blue-300 p-5">
-            <div className="bg-white rounded-2xl shadow-2xl p-8 w-full max-w-">
-                <div className="text-center mb-8">
-                    <h1 className="text-3xl font-bold text-gray-800 mb-2">Login</h1>
-                    <p className="text-gray-600 text-sm">Acesse sua conta na 1TDSPJ Farma</p>
-                </div>
-            <div>
-            <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
-                          
-                        <div className="space-y-2">
-                            <label className="block text-sm font-semibold text-gray-700">Email</label>
+        <main className="min-h-screen w-full flex items-center justify-center bg-gradient-to-b from-blue-100 via-white to-blue-50 px-4 py-12">
+            <div className="pagamento-container max-w-2xl w-full flex justify-center items-center"> 
+                    <form onSubmit={handleSubmit(onSubmit)} className="formularios w-full bg-gradient-to-b from-blue-800 via-blue-900 to-slate-900 rounded-2xl p-8 shadow-lg border border-blue-700/50 flex flex-col gap-6">
+                        <h1 className="text-3xl font-bold text-center mb-4 text-white">Login</h1>
+                        <p className="text-center text-blue-100 text-sm mb-4">Acesse sua conta na 1TDSPJ Sistema-Flow</p>
+                        <div className="flex flex-col gap-2">
+                            <label className="text-sm font-semibold text-blue-100">Email</label>
                             <input
                                 type="email"
+                                placeholder="E-mail"
+                                className="inputlogcad"
                                 {...register("email", {
                                     required: "O email é obrigatório",
                                     pattern: {
@@ -51,32 +56,37 @@ export default function Login(){
                                         message: "Formato de email inválido",
                                     },   
                                 })}
-                                className="w-full px-4 py-3 rounded-lg border-2 bg-gray-50 transition-all outline-none focus:bg-white border-gray-200 focus:border-blue-400 focus:ring-4 focus:ring-blue-100"
                             />
                           {errors.email && <p className="text-red-500 text-sm flex items-center gap-1">{errors.email.message}</p>}
                         </div>
 
-                        <div className="space-y-2">
-                            <label className="block text-sm font-semibold text-gray-700">Senha</label>
-                            <input
-                                type="password"
-                                {...register("senha", {
-                                    required: "A senha é obrigatória",
-                                    minLength: {
-                                        value: 8,
-                                        message: "A senha deve ter pelo menos 8 caracteres",
-                                    },
-                                })}
-                                className="w-full px-4 py-3 rounded-lg border-2 bg-gray-50 transition-all outline-none focus:bg-white border-gray-200 focus:border-blue-400 focus:ring-4 focus:ring-blue-100"
-                            />
-                          {errors.senha && <p className="text-red-500 text-sm flex items-center gap-1">{errors.senha.message}</p>}
-                        </div>
-                          
+                        <div className="flex flex-col gap-2">
+                            <label className="text-sm font-semibold text-blue-100">Senha</label>
+                                <div className="relative">
+                                    <input
+                                        type={showPassword ? "text" : "password"}
+                                        placeholder="Senha"
+                                        className="inputlogcad"
+                                        {...register("senha", {
+                                            required: "A senha é obrigatória",
+                                            minLength: {
+                                                value: 8,
+                                                message: "A senha deve ter pelo menos 8 caracteres",
+                                            },
+                                        })}
+                                    />
+                                    <button
+                                        type="button"
+                                        onClick={() => setShowPassword(!showPassword)}className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-300 hover:text-white">
+                                        {showPassword ? (<AiOutlineEyeInvisible size={20} />) : (<AiOutlineEye size={20} />)}
+                                    </button>
+                                    {errors.senha && <p className="text-red-500 text-sm flex items-center gap-1">{errors.senha.message}</p>}
+                                </div>
+                            </div>
                         <div>
-                          <button type="submit" className="w-full bg-cyan-500 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:shadow-xl hover:bg-cyan-600 ">Entrar</button>
+                          <button type="submit" className="botaoenviar">Entrar</button>
                         </div>
                     </form>
-                </div>
             </div>
         </main>
     );
