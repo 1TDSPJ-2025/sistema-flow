@@ -7,25 +7,25 @@ export default function Faq() {
         <main className="w-full p-4">
             <Title text="Perguntas Frequentes" />
 
-            <section className="space-y-3">
+            <section className="space-y-3 faq-section">
                 <details>
-                    <summary className="cursor-pointer font-semibold">1. Como adiciono um novo usuário?</summary>
-                    <p>Use o formulário de cadastro disponível na página de registro. Preencha os campos obrigatórios e envie.</p>
+                    <summary className="cursor-pointer font-semibold">1. Como faço para comprar um produto no site?</summary>
+                    <p>Escolha o produto que deseja, adicione ao carrinho e siga para o checkout. Verifique endereço e quantidade antes de finalizar. Após a confirmação, você receberá um e-mail com os detalhes do pedido.</p>
                 </details>
 
                 <details>
-                    <summary className="cursor-pointer font-semibold">2. Onde encontro os avatares usados no site?</summary>
-                    <p>Os avatares ficam na pasta pública do projeto. Referências de caminho estão nos registros do db.json (ex.: /sistema-flow/avatar1.jpeg).</p>
+                    <summary className="cursor-pointer font-semibold">2. Quais formas de pagamento são aceitas?</summary>
+                    <p>Normalmente aceitamos cartão de crédito, débito, PIX e boleto (dependendo do fluxo). No checkout você verá as opções disponíveis e instruções para completar o pagamento.</p>
                 </details>
 
                 <details>
-                    <summary className="cursor-pointer font-semibold">3. O que fazer se um card não aparecer?</summary>
-                    <p>Verifique se a API está acessível e se os dados retornados incluem os campos esperados (nome, nomeUser, email, avatar).</p>
+                    <summary className="cursor-pointer font-semibold">3. O pagamento falhou — o que devo fazer?</summary>
+                    <p>Verifique os dados do cartão (número, validade, CVV) e o saldo/limite. Tente novamente ou escolha outra forma de pagamento. Se o erro persistir, contate o suporte informando o erro exibido e o horário da tentativa.</p>
                 </details>
 
                 <details>
-                    <summary className="cursor-pointer font-semibold">4. Como posso alterar o texto do título da página?</summary>
-                    <p>O componente Title recebe uma prop text. Altere o valor passado na rota ou no componente que renderiza a página.</p>
+                    <summary className="cursor-pointer font-semibold">4. Esqueci minha senha / não consigo fazer login — como recuperar?</summary>
+                    <p>Na página de login use "Esqueci minha senha" para receber um link de restauração por e-mail. Verifique também se você confirmou o cadastro via e-mail. Se não receber o e-mail, cheque a pasta de spam ou solicite reenvio.</p>
                 </details>
             </section>
         </main>
