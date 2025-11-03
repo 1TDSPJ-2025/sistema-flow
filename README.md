@@ -24,6 +24,8 @@
     <li>Fetaures  -Criara pagina para pagamento com inputs de numero cartao ome dados etc - Hector,João,Juliana,Naoki [DEADELINE:9:50]</li>
     <li>Feature - Fazer o style do menu, cabecalho - Hector </li>
     <li>Feature - Fazer o style do rodapé - Jõao </li>
+    <li>Feature - Fazer a responsividade (para todas tamnho de telas) do cabecalho e do menu, esse menu tem que esconder do lado diretito da tela quando for no tamanho mobile. Tambem fazer a responsividade (para todas tamnho de telas) da pagina pagamento. -  Filippo / Eduardo e Carlos</li>
+    <li>Feature - Refatorar pagina login - João Henrique / Pedro</li>
     <li> ... </li>
 </ul>
 
@@ -43,10 +45,7 @@
 <li>Feature - Estilzar o rota Erro - Rafael</li>
 <li>Feature - Instalar o json server, fazer o fetch e consummir a url do json nas paginas Home - Hector</li>
 <li>Feature - Refatorar pagina error e estilizar com tailwind - João Henrique / Pedro</li>
-<li>Feature - Refatorar pagina login - João Henrique / Pedro</li>
-<li>Feature - Estilizar cabeçalho -  Pedro</li>
 <li>Feature - Fazer um componente buscar que vai procurar o produto pelo nome, para ser usado na pagina produtos -  Vinicius / Mathaus</li>
-<li>Feature - Fazer a responsividade (para todas tamnho de telas) do cabecalho e do menu, esse menu tem que esconder do lado diretito da tela quando for no tamanho mobile. Tambem fazer a responsividade (para todas tamnho de telas) da pagina pagamento. -  Filippo / Eduardo e Carlos</li>
 </ul>
 
 
