@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Card from "../../components/Card/Card";
 import Title from "../../components/H1Title/Title";
+import Cardpromocoes from "../../components/CardProduto/Cardpromocoes";
 
 const API_USU= import.meta.env.VITE_API_URL_ENDPOINT_USUARIOS
 
@@ -33,7 +34,7 @@ export default function Home() {
     }, []); 
 
     return (
-        <main className="w-full">
+        <main className="w-full min-h-screen flex flex-col">
             <Title text="Site de Registro pessoas" />
 
             <section>
@@ -48,6 +49,10 @@ export default function Home() {
                     </div>
                 ))}
             </section>
+    <h2 className="mt-8 mb-4 text-2xl text-center">Promoções Atuais</h2>
+      <div className="flex justify-center w-full">
+        <Cardpromocoes />
+      </div>
         </main>
     );
 }

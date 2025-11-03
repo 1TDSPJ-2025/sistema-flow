@@ -292,5 +292,34 @@
     "codigo": "CUPOMZERO",
     "valor": 0
     }
+  ],
+  "produtos": [
+  {
+    "id": 1,
+    "nome": "Diripona",
+    "descricao": "Alívio de dores",
+    "preco": 20,
+    "precoPromocional": 15,
+    "validadePromocao": "30/11/2025",
+    "imagem": "/sistema-flow/public/dipirona.jpeg"
+  },
+  {
+    "id": 2,
+    "nome": "Paracetamol",
+    "descricao": "Analgésico e antitérmico",
+    "preco": 17,
+    "precoPromocional": 10,
+    "validadePromocao": "10/12/2025",
+    "imagem": "/sistema-flow/public/paracetamol.png"
+  },
+    {
+    "id": 3,
+    "nome": "Shampoo ",
+    "descricao": "Limpeza e tratamento do couro cabeludo",
+    "preco": 32,
+    "precoPromocional": 22,
+    "validadePromocao": "25/12/2025",
+    "imagem": "/sistema-flow/public/shampoo.jpeg"
+  }
   ]
 }
