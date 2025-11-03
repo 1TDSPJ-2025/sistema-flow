@@ -1,0 +1,161 @@
+{
+  "usuarios": [
+    {
+      "id": "1",
+      "nome": "Vitória Maglio",
+      "nomeUser": "vitoriam",
+      "email": "vitoria.maglio@email.com",
+      "avatar": "/sistema-flow/avatar1.jpeg"
+    },
+    {
+      "id": "2",
+      "nome": "Mateus",
+      "nomeUser": "mateussouza",
+      "email": "mateus.souza@email.com",
+      "avatar": "/sistema-flow/avatar2.jpeg"
+    },
+    {
+      "id": "3",
+      "nome": "Felipe",
+      "nomeUser": "felipem",
+      "email": "felipe.maglio@email.com",
+      "avatar": "/sistema-flow/avatar3.jpeg"
+    },
+    {
+      "id": "4",
+      "nome": "Rafael",
+      "nomeUser": "rafael",
+      "email": "rafael.pereira@email.com",
+      "avatar": "/sistema-flow/avatar4.jpeg"
+    },
+    {
+      "id": "5",
+      "nome": "Arnaldo Ferreira",
+      "nomeUser": "analdofer",
+      "email": "arnaldofer@email.com",
+      "avatar": "/sistema-flow/avatar5.jpeg"
+    },
+    {
+      "id": "6",
+      "nome": "Fernando",
+      "nomeUser": "fernandosantos",
+      "email": "fernando.santos@email.com",
+      "avatar": "/sistema-flow/avatar6.jpeg"
+    },
+    {
+      "id": "7",
+      "nome": "Gustavo Abrao",
+      "nomeUser": "gustavo",
+      "email": "gustavoabrao@email.com",
+      "avatar": "/sistema-flow/avatar7.jpeg"
+    },
+    {
+      "id": "8",
+      "nome": "Leticia Goncalves",
+      "nomeUser": "letgoncalves",
+      "email": "leticia.goncalves@email.com",
+      "avatar": "/sistema-flow/avatar8.jpeg"
+    },
+    {
+      "id": "06c4",
+      "nomeCompleto": "larrisa lima",
+      "senha": "i7fM49dA7$l_",
+      "email": "larilima@gmail.com",
+      "nomeUsuario": "larislb"
+    },
+    {
+      "id": "dd24",
+      "nomeCompleto": "pedro augusto borges de sa",
+      "nomeUsuario": "pedrinuzuamk",
+      "email": "pedro1203@gmail.com",
+      "confirmarEmail": "pedro1203@gmail.com",
+      "senha": "lBO?67P10WA",
+      "confirmarSenha": "lBO?67P10WA"
+    }
+  ],
+  "desconto": [
+    {
+      "id": "1",
+      "nome": "Vitória Maglio",
+      "nomeUser": "vitoriam",
+      "email": "vitoria.maglio@email.com",
+      "avatar": "/avatar1.jpeg"
+    },
+    {
+      "id": "2",
+      "nome": "Mateus",
+      "nomeUser": "mateussouza",
+      "email": "mateus.souza@email.com",
+      "avatar": "/sistema-flow/avatar2.jpeg"
+    },
+    {
+      "id": "3",
+      "nome": "Felipe",
+      "nomeUser": "felipem",
+      "email": "felipe.maglio@email.com",
+      "avatar": "/sistema-flow/public/avatar3.jpeg"
+    },
+    {
+      "id": "4",
+      "nome": "Rafael",
+      "nomeUser": "rafael",
+      "email": "rafael.pereira@email.com",
+      "avatar": "/sistema-flow/public/avatar4.jpeg"
+    },
+    {
+      "id": "5",
+      "nome": "Arnaldo Ferreira",
+      "nomeUser": "analdofer",
+      "email": "arnaldofer@email.com",
+      "avatar": "/sistema-flow/public/avatar5.jpeg"
+    },
+    {
+      "id": "6",
+      "nome": "Fernando",
+      "nomeUser": "fernandosantos",
+      "email": "fernando.santos@email.com",
+      "avatar": "/sistema-flow/public/avatar6.jpeg"
+    },
+    {
+      "id": "7",
+      "nome": "Gustavo Abrao",
+      "nomeUser": "gustavo",
+      "email": "gustavoabrao@email.com",
+      "avatar": "/sistema-flow/public/avatar7.jpeg"
+    },
+    {
+      "id": "8",
+      "nome": "Leticia Goncalves",
+      "nomeUser": "letgoncalves",
+      "email": "leticia.goncalves@email.com",
+      "avatar": "/avatar8.jpeg"
+    }
+  ],
+  "cupons": [
+    {
+      "id": "1",
+      "codigo": "CUPOM10",
+      "valor": 10
+    },
+    {
+      "id": "2",
+      "codigo": "DESCONTO15",
+      "valor": 15
+    },
+    {
+      "id": "3",
+      "codigo": "PROMO20",
+      "valor": 20
+    },
+    {
+      "id": "4",
+      "codigo": "BLACKFRIDAY",
+      "valor": 50
+    },
+    {
+      "id": "5",
+      "codigo": "FRETEGRATIS",
+      "valor": 0
+    }
+  ]
+}
