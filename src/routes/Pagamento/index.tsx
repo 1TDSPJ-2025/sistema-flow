@@ -109,7 +109,7 @@ export default function Pagamento() {
 
         <button
           type="submit"
-          className="botaoenviar w-full text-center font-semibold bg-gradient-to-r from-red-700 to-red-900"
+          className="botaoenviar w-full text-center font-semibold"
         >
           Confirmar Pagamento
         </button>
