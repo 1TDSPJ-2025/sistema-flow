@@ -1,11 +1,19 @@
 @import "tailwindcss";
-//Página de Pagamento
-.pagamento-container {
-  @apply min-h-screen bg-black flex items-center justify-center px-4 py-8;
+
+/*Pagina de pagamento*/
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
- 
+
+.pagamento-container {
+  @apply w-full h-full flex items-center justify-center px-4 py-8;
+} 
+
 .formularios {
-  @apply flex flex-col gap-6 w-full max-w-md mx-auto p-8 bg-gradient-to-br from-blue-900 via-blue-950 to-slate-900 rounded-2xl shadow-lg border border-blue-800/50;
+  @apply flex flex-col gap-6 w-full max-w-md mx-auto p-8 from-blue-900 via-blue-950 to-slate-900 rounded-2xl shadow-lg border border-blue-800/50;
 }
  
 .formularios h1 {
@@ -19,4 +27,42 @@
 .botaoenviar {
   @apply w-full px-6 py-3 bg-gradient-to-r from-red-700 to-red-900 text-white font-semibold rounded-xl shadow-md hover:from-red-800 hover:to-red-950 hover:scale-[1.02] active:scale-[0.98] focus:ring-4 focus:ring-red-600/40 transition-all duration-300;
 }
- 
+
+/* Minimal CSS to make the FAQ button visible and usable */
+
+.inline-flex { display: inline-flex; align-items: center; }
+.items-center { align-items: center; }
+.gap-2 { gap: 0.5rem; }
+
+.bg-rose-600 { background-color: #e11d48; }
+.hover\:bg-rose-500:hover { background-color: #f43f5e; }
+.text-white { color: #ffffff; }
+.text-sm { font-size: 0.875rem; }
+.font-medium { font-weight: 500; }
+
+.px-3 { padding-left: 0.75rem; padding-right: 0.75rem; }
+/* class name contains a dot, escape it in CSS */
+.py-1\.5 { padding-top: 0.375rem; padding-bottom: 0.375rem; }
+
+.rounded { border-radius: 0.375rem; }
+.shadow-sm { box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
+
+/* focus helpers (escaped colons) */
+.focus\:outline-none:focus { outline: none; }
+.focus\:ring-2:focus { box-shadow: 0 0 0 3px rgba(226,77,86,0.18); }
+.focus\:ring-rose-400:focus { /* color hint, combined with ring-2 */ }
+
+/* Ensure nav links look like buttons when using those classes */
+header nav a {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Small responsive tweak so button doesn't overflow on small screens */
+@media (max-width: 480px) {
+  .text-2xl { font-size: 1.25rem; }
+  .px-3 { padding-left: 0.5rem; padding-right: 0.5rem; }
+}
+
+

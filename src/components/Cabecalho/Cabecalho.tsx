@@ -1,11 +1,147 @@
-import Menu from "../Menu/Menu";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
-export default function Cabecalho(){
+export default function Cabecalho() {
+  const [menuAberto, setMenuAberto] = useState(false);
 
-    return(
-        <header>
-            <h1>Projeto Git Flow 1TDSPJ - 2025</h1>
-            <Menu/>
-        </header>
-    );
+  return (
+    <header className="w-full bg-white shadow-md fixed top-0 left-0 z-50 transition-all duration-300">
+      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+        <Link
+          to="/"
+          className="text-2xl font-bold text-blue-600 hover:text-blue-700 transition-colors"
+        >
+          Sistema Flow
+        </Link>
+
+        <nav className="hidden md:flex gap-8 items-center text-gray-700 font-medium">
+          <Link to="/" className="hover:text-blue-600 transition-colors">
+            Início
+          </Link>
+          <Link to="/produto" className="hover:text-blue-600 transition-colors">
+            Produtos
+          </Link>
+          <Link to="/pagamento" className="hover:text-blue-600 transition-colors">
+            Pagamento
+          </Link>
+          <Link to="/login" className="hover:text-blue-600 transition-colors">
+            Login
+          </Link>
+          <Link to="/criar-conta" className="hover:text-blue-600 transition-colors">
+            Criar Conta
+          </Link>
+
+          <Link to="/faq" className="hover:text-blue-600 transition-colors">
+            FAQ
+          </Link>
+        </nav>
+
+        <button
+          onClick={() => setMenuAberto(!menuAberto)}
+          className="md:hidden text-gray-700 hover:text-blue-600 transition"
+          aria-label="Abrir menu"
+        >
+          {menuAberto ? (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-7 w-7"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          ) : (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-7 w-7"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          )}
+        </button>
+      </div>
+
+      <div
+        className={`fixed top-0 right-0 h-full w-3/4 bg-gradient-to-b from-blue-700 to-blue-900 text-white shadow-xl transform transition-transform duration-500 ease-in-out z-40 ${
+          menuAberto ? "translate-x-0" : "translate-x-full"
+        } md:hidden`}
+      >
+        <div className="flex justify-between items-center px-6 py-5 border-b border-blue-500/40">
+          <h2 className="text-lg font-semibold">Menu</h2>
+          <button onClick={() => setMenuAberto(false)} aria-label="Fechar menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-7 w-7 text-white"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+        <nav className="flex flex-col gap-6 px-8 py-8 text-lg font-medium animate-slideIn">
+          <Link
+            to="/"
+            onClick={() => setMenuAberto(false)}
+            className="hover:text-blue-300 transition-colors"
+          >
+            Início
+          </Link>
+          <Link
+            to="/produto"
+            onClick={() => setMenuAberto(false)}
+            className="hover:text-blue-300 transition-colors"
+          >
+            Produtos
+          </Link>
+          <Link
+            to="/pagamento"
+            onClick={() => setMenuAberto(false)}
+            className="hover:text-blue-300 transition-colors"
+          >
+            Pagamento
+          </Link>
+          <Link
+            to="/login"
+            onClick={() => setMenuAberto(false)}
+            className="hover:text-blue-300 transition-colors"
+          >
+            Login
+          </Link>
+
+          <Link
+            to="/criar-conta"
+            onClick={() => setMenuAberto(false)}
+            className="hover:text-blue-300 transition-colors"
+          >
+            Criar Conta
+          </Link>
+
+          <Link
+            to="/faq"
+            onClick={() => setMenuAberto(false)}
+            className="hover:text-blue-300 transition-colors"
+          >
+            FAQ
+          </Link>
+        </nav>
+      </div>
+
+      <div
+        onClick={() => setMenuAberto(false)}
+        className={`fixed inset-0 bg-black bg-opacity-40 backdrop-blur-sm transition-opacity duration-500 ${
+          menuAberto ? "opacity-100 visible" : "opacity-0 invisible"
+        } md:hidden z-30`}
+      ></div>
+    </header>
+  );
 }
