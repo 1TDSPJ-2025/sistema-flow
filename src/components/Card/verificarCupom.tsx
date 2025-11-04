@@ -1,5 +1,4 @@
-import db from "../../../db.json";
-
+import db from "../../db.json";
 
 interface Cupom {
   codigo: string;
@@ -86,4 +85,21 @@ export function isFreeShipping(codigo?: string | null): boolean {
 
   const valor = parseFloat(String(cupom.valor)) || 0;
   return valor === 0 || code.includes("frete") || code.includes("gratis");
+}
+
+export function getCupom(codigo?: string | null): Cupom | null {
+  if (!codigo || typeof codigo !== "string") return null;
+  const code = normalizeCode(codigo);
+  return (
+    (database.cupons || []).find((c) => normalizeCode(c.codigo) === code) ||
+    null
+  );
+}
+
+export function searchCupons(query?: string): Cupom[] {
+  if (!query || typeof query !== "string") return database.cupons || [];
+  const q = normalizeCode(query);
+  return (database.cupons || []).filter((c) =>
+    normalizeCode(c.codigo).includes(q)
+  );
 }
